@@ -1,6 +1,6 @@
 # Problem 121
 
-[link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/submissions/)
+[link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
 
 | status | runtime | memory | language |
 | ------ | ------- | ------ | --------|
