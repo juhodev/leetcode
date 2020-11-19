@@ -1,9 +1,9 @@
-package dev.juho.leetcode;
+package dev.juho.leetcode.problem1337;
 
 import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class Problem1337 {
+public class Problem {
 
 	/*
 		1337. The K Weakest Rows in a Matrix
@@ -48,41 +48,6 @@ public class Problem1337 {
 		Rows ordered from the weakest to the strongest are [0,2,3,1]
 	 */
 
-	public void solve() {
-		int[][] first = new int[][]{
-				{1, 1, 0, 0, 0},
-				{1, 1, 1, 1, 0},
-				{1, 0, 0, 0, 0},
-				{1, 1, 0, 0, 0},
-				{1, 1, 1, 1, 1}
-		};
-		System.out.println("k=3 [2, 0, 3] > " + Arrays.toString(kWeakestRows(first, 3)));
-
-		int[][] second = new int[][]{
-				{1, 0, 0, 0},
-				{1, 1, 1, 1},
-				{1, 0, 0, 0},
-				{1, 0, 0, 0}
-		};
-		System.out.println("k=2 [0, 2] > " + Arrays.toString(kWeakestRows(second, 2)));
-
-		int[][] third = new int[][]{
-				{1, 1, 1},
-				{1, 1, 1},
-				{1, 1, 1}
-		};
-		System.out.println("k=1 [0] > " + Arrays.toString(kWeakestRows(third, 1)));
-
-		int[][] fourth = new int[][]{
-				{1, 1, 1, 1, 1},
-				{1, 0, 0, 0, 0},
-				{1, 1, 0, 0, 0},
-				{1, 1, 1, 1, 0},
-				{1, 1, 1, 1, 1}
-		};
-		System.out.println("k=3 [1, 2, 3] > " + Arrays.toString(kWeakestRows(fourth, 3)));
-	}
-
 	public int[] kWeakestRows(int[][] mat, int k) {
 		int rowCount = 0;
 		int[] weakest = new int[k];
@@ -109,8 +74,6 @@ public class Problem1337 {
 					if (rowCount == k) {
 						return weakest;
 					}
-
-					continue;
 				}
 			}
 		}

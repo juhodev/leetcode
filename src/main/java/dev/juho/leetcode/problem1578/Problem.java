@@ -1,18 +1,6 @@
-package dev.juho.leetcode;
+package dev.juho.leetcode.problem1578;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
-
-public class Problem1578 {
-
-	public void solve() {
-		System.out.println("cost " + minCost("abaac", new int[]{1, 2, 3, 4, 5}));
-		System.out.println("cost " + minCost("abc", new int[]{1, 2, 3}));
-		System.out.println("cost " + minCost("aabaa", new int[]{1, 2, 3, 4, 1}));
-		System.out.println("cost " + minCost("cddcdcae", new int[]{4, 8, 8, 4, 4, 5, 4, 2}));
-	}
+public class Problem {
 
 	public int minCost(String s, int[] cost) {
 		int[] store = new int[cost.length];

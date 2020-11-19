@@ -1,19 +1,6 @@
-package dev.juho.leetcode;
+package dev.juho.leetcode.problem121;
 
-import java.util.Arrays;
-
-public class Problem121 {
-
-	public void solve() {
-		int[] first = new int[]{7, 1, 5, 3, 6, 4};
-		System.out.println(Arrays.toString(first) + ": " + maxProfit(first));
-
-		int[] second = new int[]{7, 6, 4, 3, 1};
-		System.out.println(Arrays.toString(second) + ": " + maxProfit(second));
-
-		int[] third = new int[]{3, 100, 1, 4};
-		System.out.println(Arrays.toString(third) + ": " + maxProfit(third));
-	}
+public class Problem {
 
 	public int maxProfit(int[] prices) {
 		int highestProfit = 0;
